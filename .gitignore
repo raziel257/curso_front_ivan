@@ -1,0 +1,4 @@
+# excluimos una carpeta
+node_modules/
+# excluimos los ficheros correspondientes a la extension
+*.log

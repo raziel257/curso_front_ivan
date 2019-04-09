@@ -18,6 +18,12 @@ margin-right: 2em;
 }
 .verde { color: darkgreen
 }
-img {
+img, embed {
     width: 45%;
 }    
+figure { margin: 0;
+padding: 0;
+}
+video {
+    width: 50%;
+}

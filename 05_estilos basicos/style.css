@@ -1,0 +1,31 @@
+/* Selector de etiqueta (h1, h2, p, etc...) */
+
+h1, h2 { 
+    color: brown;
+}
+p { color: aquamarine;
+
+}
+h1 {
+    font-size: 2rem;
+
+}
+h2 {
+    font-size: 1.5rem;
+
+}
+/* Selectores de id
+Buena practica: LOS SELECTORES DE id NO SE USAN
+ */
+
+#p01 {
+    color: crimson;
+
+}
+/* Selectores de clase, se usa CLASS para darle atributo (class) a la etiqueta*/
+.resaltado { color: deeppink;
+}
+/* Selectores de atributo */
+[name="nombre"] {
+    background-color: rgb(250, 0, 0);
+}

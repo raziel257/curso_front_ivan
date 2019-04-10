@@ -1,0 +1,17 @@
+/* Selector de descendientes: operador es el espacio (section) */
+section p { 
+    color: brown
+}
+/* Selector de hijo: operador es: > */
+section>p {
+    color: blanchedalmond;
+}
+/*Selector de hermanos es: ~  */
+div~p { 
+    color: aqua;
+} 
+/* Selector de hermanos adyacentes es: + */
+div+p { 
+    color: darkgoldenrod;
+
+}

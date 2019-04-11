@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+/* 
+* {
+    box-sizing: border-box;
+}
+Esta debe ser la primera lina en cualquier styles.css */
+body {
+    margin: 0;
+    padding: 0;
+
+}
+.cuadrados p {
+    margin: calc(calc(100% - calc(18%*5)) /10);
+    padding-left: 1rem;
+    background-color: brown;
+    border: 1px solid; 
+    width: 18%;
+    float: left; 
+}
+.clearfix {
+    clear: both;
+}
+.real p:not(:first-child) {
+    float: left;
+    width: 33.33%;
+    padding-left: 1.5rem;
+}
+.real {
+    margin: 2rem;
+}
+.real p {
+    float: left;
+    width: 33%;
+
+}

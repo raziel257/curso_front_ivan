@@ -1,0 +1,63 @@
+p::first-letter {
+    font-size: 4rem
+}
+aside p::first-line {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+section div p::before {
+    content: "!!";
+}
+section div p::after {
+    content: "¡¡"
+}
+/* Ejemplos de multi elementos, entre las comillas se puede poner lo que quieras como emojis, pero no imagenes */
+/* section div p::after {
+    content: "🏴‍☠️"
+} */
+p:hover {
+    color: blueviolet
+}
+/* p:hover   sirve para que al pasar el raton por el elemento cambie al color seleccionado */
+a:visited {
+    color: chartreuse
+}
+/* a, a:visited {
+    color: chartreuse
+}  le indicas que a los demas elementos les de el mismo color (asi evitamos que remarque las visitas hechas*/
+section p:nth-child(1) {
+    color: blue
+} /*  Le indicas que el primer hijo de section --nth-child(1)-- se pinte de azul  
+p:nth-child(1) {
+    color: blue
+}  asi seria a todos los primer hijos */
+
+/* section p:nth-of-type(1) {
+    color: crimson
+}  asi le damos color a todos los elemento que le demos de la SECTION, TYPE se refiere al valor que le des P:*/
+/* section p:nth-of-type(even) {
+    color: darkgreen;
+}  le das color al par o impar  even o odd*/
+/* * {
+    display: inline;
+} te cargas todos los bloques!!*/
+ body {
+    font-family: 'Cinzel', serif;
+    border: 1px solid;
+} 
+/* * {
+    font-family: 'Cinzel', serif;
+    border: 1px solid;
+} asi se lo aplicamos a todos los elementos */
+header {
+   font-family: 'Alfa Slab One', cursive; 
+}
+/* header {
+   font-family: 'Alfa Slab One','otro tipo de fuete', cursive; 
+}  asi le añadimos que coja otro tipo si la origen no esta disponible y si tampoco pasaria a cualquier --cursive-- por defecto */
+/* Herencia:
+-la fuente si se hereda
+-el borde no se hereda */
+
+
+

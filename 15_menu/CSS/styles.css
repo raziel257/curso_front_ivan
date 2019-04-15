@@ -1,6 +1,9 @@
+
 body {
     margin: 0%;
     padding: 0%;
+    font-family: 'Merriweather', serif;
+
 }
 .main-header {
     background-color: brown;
@@ -8,8 +11,8 @@ body {
     padding: 1rem;
 
     
-    /* right: 1rem;
-    top: 1px; */
+     right: 1rem;
+    top: 1px; 
 
 }
 .main-header div {
@@ -19,6 +22,7 @@ body {
 .main-header h1 { 
     margin: 0%;
     padding: 0%;
+    font-family: 'Dokdo', cursive;
 }
 .main-header p {
     margin-bottom: 0%;
@@ -34,15 +38,18 @@ body {
 
 }
 
-.main-menu ol {
+.menu ol, .menu ul {
     list-style: none;
     margin: 0%;
     padding: 0;
 
 }
-.main-menu a {
+.menu a {
     color: inherit;
     text-decoration: none;
+}
+.main-menu a {
+    
     display: block;
     padding: 1rem;
     color: aqua;
@@ -57,6 +64,11 @@ body {
 }
 
 .main-menu p {}
+.social-menu {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
 
 body>div {
     margin: 2rem;
@@ -67,4 +79,10 @@ body>div {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
+}
+.social-menu {
+    margin-top: 1rem;
+    font-size: 2rem;
+
+
 }

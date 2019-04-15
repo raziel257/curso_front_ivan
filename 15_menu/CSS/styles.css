@@ -1,4 +1,6 @@
+*, *::after, *::before, *:after, *:before {
 
+}
 body {
     margin: 0%;
     padding: 0%;
@@ -28,7 +30,17 @@ body {
     margin-bottom: 0%;
     margin-top: 0.2rem;
 }
-/* .content-wrapper */
+.content-wrapper {
+    margin: 2rem;
+    /* overflow: auto; */
+
+} 
+ /*.content-wrapper:after {
+    content: "";
+    display: block;
+   clear: both; es otra manera de contener los flotantes */
+
+}  
 .main-menu {
     border: 1px solid;
     border-radius: 5px;
@@ -63,7 +75,18 @@ body {
 
 }
 
-.main-menu p {}
+.main-menu p {
+    margin-bottom: 0;
+    margin-top: 0.1rem;
+     display: none; 
+   /* visibility: hidden;*/
+
+
+}
+.main-header :hover p {
+     display: initial;
+   /* visibility: initial; */
+}
 .social-menu {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -76,13 +99,32 @@ body>div {
 .main-footer {
     background-color: brown;
     color: bisque;
-    padding-top: 1rem;
+    padding-top: 1rem; 
     padding-bottom: 1rem;
     text-align: center;
 }
 .social-menu {
     margin-top: 1rem;
     font-size: 2rem;
+}
+.main-content {
+    background-color: bisque;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
+width: 70%;
+float: left;
+}
+.main-aside {
+width: 30%;
+float: left;
+background-color: gainsboro;
+padding-left: 1rem;
+padding-right: 1rem;
 
 }
+.clearfix {
+    clear: both;
+    margin-bottom: 2rem;
+
+} /* al crear el div con class: clearfix contenemos los flotantes desde ese punto  */

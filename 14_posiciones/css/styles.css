@@ -1,0 +1,19 @@
+section {
+     position: relative;
+}/*  aqui le damos como referencia para moverse la seccion, si no iria al siguiente elemento estatico que en este caso es el body. */
+section p {
+    padding: 1rem;
+    background-color: bisque;
+}
+.relativo {
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+
+}/* en relativo se mueve y el resto de elementos no ocupa su anterior espacio, deja memoria de donde estaba. */
+.absoluto {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+
+}

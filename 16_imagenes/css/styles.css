@@ -1,0 +1,47 @@
+img {
+    /*  width: 100%; */ 
+/*width: fit-content;*/   /* asi contienes la imagen en su bloque */
+max-width: 100%;
+}
+p {
+    text-align: justify;
+    }
+.image-wrapper {
+    width: 50%;
+    /* float: left;
+    margin-right: 1rem; */
+    float: right;
+    margin-left: 1rem;
+
+}
+.image-wrapper-25 {
+    width: 25%
+}
+.image-wrapper-75 {
+    width: 75%
+}
+.clearfix {
+    border-top: 1px solid goldenrod;
+
+}
+.fondos {
+    height: 100vh;
+        
+     /* padding: 2rem; */
+    background-color: #C2D4FD;
+    background-image: url("../assets/3boats.jpg");
+    background-repeat: no-repeat;
+     /* background-size: 100%; */ 
+    /* background-size: contain; */ 
+    background-size: cover; /* cubre el elemento */
+   /*  background-blend-mode: soft-light; para darle transparencias jugando con la luz */
+    opacity: 0.5;
+    }
+    
+    .fondos h2 {
+        text-align: center;
+        /* line-height: 100vh; */
+        padding: 25vh;
+        color: #BC986E;
+        }
+        

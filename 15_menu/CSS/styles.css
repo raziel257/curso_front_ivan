@@ -1,6 +1,6 @@
-*, *::after, *::before, *:after, *:before {
+/* *, *::after, *::before, *:after, *:before {
 
-}
+} */
 body {
     margin: 0%;
     padding: 0%;
@@ -40,7 +40,7 @@ body {
     display: block;
    clear: both; es otra manera de contener los flotantes */
 
-}  
+  
 .main-menu {
     border: 1px solid;
     border-radius: 5px;

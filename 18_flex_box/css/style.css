@@ -1,0 +1,12 @@
+section.flex {
+    display: flex;
+    border: 1px double rgb(218, 13, 13);
+    height: 40vh; /* le esta dando el largo a las celdas */
+    
+
+}
+p.item {
+    padding: 1rem;
+    background-color: coral;
+    border: 1px solid; /* le estamos dando el  borde a los parrafos */
+}

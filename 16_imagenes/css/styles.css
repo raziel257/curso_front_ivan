@@ -25,15 +25,15 @@ p {
 
 }
 .fondos {
-    height: 100vh;
+    height: 70vh;
         
-     /* padding: 2rem; */
-    background-color: #C2D4FD;
-    background-image: url("../assets/3boats.jpg");
+     padding: 2rem; 
+    background-color: rgb(134, 137, 145);
+    background-image: url("../assets/luna.jpg");
     background-repeat: no-repeat;
-     /* background-size: 100%; */ 
-    /* background-size: contain; */ 
-    background-size: cover; /* cubre el elemento */
+    /*background-size: 100%;  */
+     background-size: contain;
+     /*background-size: cover; cubre el elemento */
    /*  background-blend-mode: soft-light; para darle transparencias jugando con la luz */
     opacity: 0.5;
     }

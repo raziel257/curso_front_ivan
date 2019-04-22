@@ -9,41 +9,34 @@ let edad = 35 // declaras e inicializas en la misma linea.
 
 //undefined
 let data
-console.log(data)
-console.log(typeof data) 
-
-// A- datos primitivos.
+mostrar(data) 
 
 // strings
 data = 'Hola ammigos'
-console.log(data)
-console.log(typeof data) 
+mostrar(data) 
 
 // numbers
 data = 35
-console.log(data)
-console.log(typeof data)
+mostrar(data) 
 
 // booleans
 data = true
 data = false
-console.log(data)
-console.log(typeof data)
-
-// B- datos referenciados.
+mostrar(data) 
 
 // objet
 data = { name: 'Pepe', age: 34}
-console.log(data)
-console.log(typeof data)
+mostrar(data) 
 
 // objet tipo array
 data = [23,45,78]
-console.log(data)
-console.log(typeof data)
+mostrar(data) 
 
 // Es un tipo de objeto
-function mostrar() {}
+function mostrar(input) {
+    console.log('el dato recibido es',input)
+    console.log('el tipo del dato es',typeof input)
+    console.log('----------')
+}
 
-console.log(mostrar)
-console.log(typeof mostrar)
+mostrar(mostrar)

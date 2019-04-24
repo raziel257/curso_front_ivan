@@ -62,7 +62,9 @@ let mensajes =[
 ]
 console.log(mensajes[i])
 
+/* 
+&& - AND
+|| - O
+! - NOT */
 
-
-    
-
+  

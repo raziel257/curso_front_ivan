@@ -91,7 +91,7 @@ function mostrar(isPar, num) {
   if (isPar) {
     i = 0
   }  */
-  let i = (isPar) ? 0 : 1
+  let i = (isPar(num)) ? 0 : 1
   console.log(mensajes[i])
 }
 
@@ -102,7 +102,7 @@ function mostrar(isPar, num) {
  * @returns: void
 */
 
-let number = 23
+let number = 0
 number = 28
 number = 'Pepe'
 number = 0
@@ -130,6 +130,32 @@ numero = {}
 numero = []
 numero = false
 numero = true
-console.log(typeof numero === 'Boolean')
-mostrar2(numero % 2, numero)  
+//console.log(typeof numero === 'Boolean')
+//mostrar2(numero % 2, numero)  
 //mostrar2(calculaqueEs(numero),(numero))
+
+// Control de errores o excepciones.
+
+
+
+/* try {
+  // NoExiste()
+  let x = 3
+  throw 'probando un error'
+} catch (error) {
+  console.log('lo siento ha habido un error, error')
+} */
+
+
+function  calculaQueEs(num) {
+  let r
+  if (isNaN(num) || Array.isArray(num) || typeof num === 'boolean') {
+    throw 'el valor no es un numero'
+      } else if (parseInt(num) != num) {
+    throw 'El valor es un numero decimal'
+      
+  } else {
+      r = num % 2
+  }
+ 
+  return r

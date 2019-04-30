@@ -6,6 +6,9 @@
     font-family: 'Bungee', cursive;
     
 }
- header {
-    background-image: url("./assets/estrellas.jpg"); 
+ 
+ .sub-header {
+     background-image: url(../assets/estrellas.jpg);
+     background-color: rgb(133, 133, 206);
+     padding right: 2rem;
  }

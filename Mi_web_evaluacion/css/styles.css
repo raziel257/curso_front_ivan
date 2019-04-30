@@ -1,0 +1,11 @@
+
+.main-header {
+    background-color: black; 
+    color: rgb(117, 75, 24);
+    padding: 2rem;
+    font-family: 'Bungee', cursive;
+    
+}
+ header {
+    background-image: url("./assets/estrellas.jpg"); 
+ }

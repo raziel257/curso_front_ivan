@@ -20,6 +20,9 @@ let user1 = {
     altura : 179 
 }
 
+// let user1 = new Object()
+// user1.nombre ='pepe'
+
 let user2 = {
     nombre: 'Rosa',
     edad: 27,

@@ -15,3 +15,6 @@
  img {
      max-width: 100%;
  }
+h1:hover+p {
+visibility: collapse;
+ }

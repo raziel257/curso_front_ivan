@@ -2,80 +2,38 @@ let vuelo = {
     airline: 'Oceanic',
     number: '815',
     departure: {
-        time: '2004-09-22 14:55',
         claveIATA: 'SYD',
-        place: {
-          ciudad: 'Sydney',
-          pais: 'Australia'  
-        }
-        
-        },
+        time:  '2004-09-22 14:55',
+        ciudad: 'Sydney'
+    },
     arrival: {
-        time: '2004-09-23 10:42',
         claveIATA: 'LAX',
-        ciudad: 'Los Angeles',
-    } 
-}
-
-vuelo.mostrar = function (obj = this)  {
-    for (const key in obj) {
-       
-            const element = obj[key];
-            if (typeof element === 'function' ) {
-                 continue
-                }
-            if (typeof element !== 'object' ) {
-            console.log( `La propiedad ${key} vale ${element}`)  
-           // obj.mostrar(element)
-        }
+        time:  '2004-09-23 10:42',
+        ciudad: 'Los Angeles'
+    },
+    toString : function (obj = this) {
+        let output = ''
+        for (const key in obj) {
+            const element = obj[key]
+            if (typeof element === 'function') {
+                continue
+            }
+            if (typeof element === 'object') {
+                output = output + `La propiedad ${key} vale ...` + '\n'
+                output = output + obj.toString(element) }
             else {
-                console.log( `La propiedad ${key} vale...`)
-                
+                output = output + `La propiedad ${key} vale ${element}` + '\n'
             }
         }
-        vuelo.toString = function (obj = this)  {
-            let output = ''
-            for (const key in obj) {
-                    const element = obj[key];
-                    if (typeof element === 'function' ) {
-                         continue
-                        }
-                    if (typeof element === 'object' ) {
-                        output = output + `La propiedad ${key} vale...` + '\n'
-                        output = output + obj.toString(element)
-                }
-                    else {
-                       
-                        output = output +  `La propiedad ${key} vale ${element}` + '\n'
-                    }
-                }
-                return output
-        }
+        return output
+    },
+    mostrar : function () {
+        console.log(this.toString())
+    }
 }
-
-// console.log (typeof vuelo.mostrar)
 
 vuelo.mostrar()
 
-
-/**
- * @param : object
- * @returns : string
- */
-
-// vuelo.toString()
-
-
-vuelo.mostrarFinal = function () {
-    console.log(this.toString())
-}
-
-vuelo2 = {
-    airline: 'Iberia',
-    number: '185',
-}
-
-vuelo.mostrarFinal()
 
 
 

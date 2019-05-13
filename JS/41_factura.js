@@ -3,7 +3,7 @@
  * 
  * definir la estructura de un objeto que almacene una factura
  * Las facturas estan formadas por:
- * -la informacion propia de la em presa (Nombre, direccion, telf., nif)
+ * -la informacion propia de la empresa (Nombre, direccion, telf., nif)
  * -La informacion del cliente (similar a la de la empresa)
  * -Una lista de elementos (descripcion, precio, cantidad)
  * -informacion basica de la factura (importe total, tipo de IVA, forma de pago)
@@ -14,8 +14,14 @@
  */
 
 factura = {
-    empresa: {nombre:'', direccion: '', telefono: '', NIF: ''},
-    cliente: {nombre:'', direccion: '', telefono: '', NIF: ''},
+    empresa: {nombre:'Black Mountain',
+     direccion: 'Unknow',
+      telefono: '000777',
+       NIF: ''},
+    cliente: {nombre:'',
+     direccion: '',
+      telefono: '',
+       NIF: ''},
     items: [
         {descripcion: '', precio: 20, cantidad: 12},
         {descripcion: '', precio: 24, cantidad: 10},
@@ -34,9 +40,11 @@ factura = {
     },
     muestraImporte: function () {
         this.actualizaImporte()
-        let msg = 'El importe'
-        console.log(this.importeTotal.toFixed(2) + ' €')
+        // let msg = 'El importe total (IVA incluido) es' + this.importeTotal.toFixed(2) + '€'
+        let msg = 'El importe total (IVA incluido) es' + this.importeTotal.toFixed(2) + '€'
+       // console.log(this.importeTotal.toFixed(2) + ' €')
+       console.log(msg)
     }
-
-
 }
+factura.muestraImporte()
+})()

@@ -31,7 +31,7 @@ export class Saludador{
 
     }
     borrar () {
-        this.output.innerHTML = ' '
-        this.inNombre.value = ' '
+        this.output.innerHTML = ''
+        this.inNombre.value = ''
     }
 }

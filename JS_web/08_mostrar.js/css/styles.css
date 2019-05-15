@@ -13,3 +13,12 @@ section {
     text-align: center;
     padding: 2rem;
 } 
+
+.hide {
+    display: none
+}
+
+.boton {
+    cursor: pointer;
+    background-color: gainsboro;
+}

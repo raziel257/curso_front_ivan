@@ -13,7 +13,7 @@
         <h1>Formulario</h1>
     </header>
     <section class="formulario">
-     <form id="form_curso" action="https://jsonplaceholder.typicode.com/users" method="post" novalidate>
+     <form id="form_curso" action="https://jsonplaceholder.typicode.com/users" method="post">
                     
                     <fieldset>
                         <legend>Datos personales</legend>
@@ -21,12 +21,13 @@
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="nombre" 
                                 placeholder="Escribe tu nombre " required minlength="3">
-                                <p class="error"></p>
+                              <p hidden class="error"> </p>  
                         </div>
                         <div class="control-group">
                                 <label for="nombre">Apellidos</label>
                                 <input type="text" name="nombre" id="apellidos" 
                                     placeholder="Escribe tus Apellidos " required minlength="3">
+                                    <p hidden class="error"> </p>  
                             </div>
                             <div class="control-group">
                                 <label for="dni">DNI</label>
@@ -36,11 +37,13 @@
                         <div class="control-group">
                             <label for="email">Correo</label>
                             <input type="email" name="email" id="email" placeholder="Correo" required>
+                            <p hidden class="error"> </p>  
                         </div>    
                         <div class="control-group">
                             <label for="passwd">Contraseña</label>
                             <input type="password" name="passwd" id="passwd" required pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*">
                             <dialog>Ha de contener un numero, mayuscula, minuscula y caracter especial</dialog>
+                            <p hidden class="error"> </p>  
                         </div>
                         <div class="control-group">
                             <label for="">Fecha de nacimiento</label>
@@ -57,6 +60,7 @@
                         <div>
                             <input type="checkbox" name="aceptado" id="aceptado" required>
                             <label for="aceptado">Estoy de acuerdo con las condiciones</label>
+                            <p hidden class="error"> </p>  
                         </div>
                         <div>
                                 <input type="checkbox" name="misdatos" id="datos" >

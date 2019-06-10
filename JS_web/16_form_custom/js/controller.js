@@ -9,6 +9,13 @@ let formData = {}
 
 
 let form_curso = document.querySelector('#form_curso')
+let aControles = document.querySelectorAll(`[type="text"],
+[type="email"],
+[type="date"],
+[type="password"],
+ textarea`)
+ let aChecks = document.querySelectorAll('[type="checkbox"]')
+ aChecks.forEach(item => formData[item.id] = item.checked)
 
 form_curso.addEventListener('submit', onSubmit)
 let dni = document.querySelector('#dni')
@@ -22,24 +29,14 @@ dni.addEventListener('change', () => {
 
     }
 })
+
 function onSubmit(ev) {
     console.log('formulario enviado')
     ev.preventDefault()
 
-    // validacion
-
-    if (document.querySelector('#nombre').validity.valueMissing) {
-        document.querySelector('#nombre').nextElementSibling.innerHTML =
-        document.querySelector('#nombre').validationMessage
-        return
-    }
-    // console.dir()
     
-    let aControles = document.querySelectorAll(`[type="text"],
-                                            [type="email"],
-                                            [type="date"],
-                                            [type="password"],
-                                             textarea`)
+    
+   
 
     for (let i = 0; i < aControles.length; i++) {
         const item = aControles[i];
@@ -77,10 +74,26 @@ function onSubmit(ev) {
 }
 
 function validate(nodo) {
-    if (nodo.validity.valueMissing) {
+    if (nodo.validity.valueMissing){
+    nodo.focus()
+    nodo.classList.add (".invalid") 
         nodo.nextElementSibling.innerHTML = 'Completa este campo'
-        document.querySelector('#nombre').validationMessage
-        return
+        nodo.nextElementSibling.hidden = false
+        console.dir(nodo)
+
+        return false
+    } else if (nodo.validity.tooShort) {
+    nodo.focus()
+    nodo.classList.add (".invalid") 
+        nodo.nextElementSibling.innerHTML = 'Aumenta la longitud de este campo'
+        nodo.nextElementSibling.hidden = false
+        console.dir(nodo)
+
+        return false
+    } else {
+        nodo.classList.remove(".invalid")
+        nodo.nextElementSibling.hidden = true
+ 
     }
     
 }

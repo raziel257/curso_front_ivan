@@ -49,10 +49,8 @@ fieldset {
 
 }
 
-.error {
-    color: red;
-}
+input:required {
+    background-color: blueviolet;
+    }
 
-:invalid {
-    border: 1px brown solid;
-}
+.invalid     

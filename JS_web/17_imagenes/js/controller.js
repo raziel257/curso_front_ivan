@@ -9,7 +9,7 @@ export function controller() {
         item.addEventListener('click', onClickImg)
     
     document.querySelector('#imgMig')
-    .addEventListener('.click', onClickImg)
+    .addEventListener('#click', onClickImg)
 })
     function onClickImg(ev) {
         let nodoImg = 

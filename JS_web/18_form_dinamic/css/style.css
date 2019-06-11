@@ -20,14 +20,27 @@ section {
     flex-wrap: wrap;
 }
 
-section div {
+section>div {
     width: 50%;
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
-.curso {
-    margin-left: 5rem;
-    margin-right: 5rem;
+
+section>div.output {
+    width: 100%;
+    padding: 1rem 2rem;
 }
+
+.tabla {
+    color: brown;
+    background-color: bisque; 
+    width: 90%;
+    padding: 1rem 0.2rem;
+}
+
+.tabla tr:nth-of-type(2n) {
+    background-color: darkkhaki;
+}
+
 
 fieldset {
     border-color: salmon;
@@ -66,28 +79,4 @@ fieldset {
     color: salmon;
     padding: 0.6rem;
 
-}
-
-.error {
-    color: brown;
-    margin: 0 0 0 4rem;
-    background-color: darkgray;
-    border: 2px dimgray groove;
-    padding: .6rem;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 2px darkgray;
-    width: fit-content;
-}
-
-input:required {
-   background-color: bisque; 
-}
-
-/* input:invalid {
-    border: 1px brown solid;
-}  */
-
-
-.invalid {
-    border: 1px brown solid;
 } 

@@ -1,32 +1,52 @@
 import { ajax } from "./ajax.js";
 
 export function controller() {
+
+    // Variables de estado
+
     const URL = 'https://jsonplaceholder.typicode.com/photos?albumId=1'
     const URL_USERS = "https://randomuser.me/api/?results=10"
-    const aFotos = []
-    let sectionFigures = document.querySelector('#figures')
-  //  ajax(URL, 'GET', getFotos )
-
-    fetch(URL).then(
-        (response) => response.json()
-    ).then(
-        (datos) => {console.log(datos)}
-    )
-
+    let aFotos = []
+    const itemActual = 0
 
     // Elementos del DOM
     const btnAdd = document.querySelector('#put')
     let aBtnModificar 
-    let aBtnBorrar 
+    let aBtnBorrar
+
+    getFotos(URL_USERS)
+    
+
+    
+  //  ajax(URL, 'GET', getFotos )
+
+    /* fetch(URL).then(
+        (response) => response.json()
+    ).then(
+        (datos) => {console.log(datos)}
+    )
+ */
+
+    
 
     // Manejadores de eventos
     btnAdd.addEventListener('click', onAdd)
 
+    function getFotos(url){
+    fetch(URL)
+    .then(response => response.json())
+    .then(response => {
+       console.log(aFotos)
+       aFotos = response  
+       renderFotos()
+    })
+    }
 
     /*  "albumId": 1,
     */   
-    function getFotos(response) {
+    function renderFotos(response) {
         console.log(response)
+        let sectionFigures = document.querySelector('#figures')
         let html = ''
         JSON.parse(response)     
             .forEach( item => {

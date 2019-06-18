@@ -1,8 +1,8 @@
 class Persona {
-    nombre
-    edad
-    alma
-    constructor (nombre, edad) {
+   nombre: string
+   edad: number
+   alma: boolean
+    constructor (nombre: string, edad: number) {
         this.nombre = nombre
         this.edad = edad
         this.alma = true
